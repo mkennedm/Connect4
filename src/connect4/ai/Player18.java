@@ -1,7 +1,8 @@
 /*Matthew Kennedy
  * mkennedymsm at gmail dot com
  * mkennedm at bu dot edu
- * This is the class for the player in Connect 4.
+ * This is the class for the artificial intelligence in Connect 4.
+ * The code for the graphics can be found in Connect4.java
  * It looks at possible moves and generates a tree that will be used to decide the best move to make.
  * */
 package connect4.ai;

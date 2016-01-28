@@ -1,7 +1,6 @@
 package connect4;
 
 
-
 import java.awt.*;
 import java.util.*;
 import java.awt.event.*;
@@ -88,7 +87,6 @@ public class Connect4 extends JFrame{
         }
         
     }
-    
     
     /*sets the color of every button to gray and sets every index of the int board to 0*/
     private static void gray (JButton [][] button) {
@@ -267,8 +265,6 @@ public class Connect4 extends JFrame{
                 p.maxDepth  = 6;
             }
             
-            
-            
             EventObject event = events.waitEvent();
             String name = events.getName(event);
             
@@ -280,7 +276,6 @@ public class Connect4 extends JFrame{
                 p.reset();
                 gray(buttons);
             }
-            
             
             if (!gameOver(p)) {
                 

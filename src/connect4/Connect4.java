@@ -1,3 +1,10 @@
+/*
+* Matthew Kennedy
+* mkennedymsm at gmail dot com
+* mkennedm at bu dot edu
+* This file contains the graphics for Connect 4
+* The code for the AI can be found in Player18.java
+*/
 package connect4;
 
 

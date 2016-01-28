@@ -1,11 +1,8 @@
 /*Matthew Kennedy
- * CS112
- * Problem Set 9
+ * mkennedymsm at gmail dot com
+ * mkennedm at bu dot edu
  * This is the class for the player in Connect 4.
  * It looks at possible moves and generates a tree that will be used to decide the best move to make.
- * 
- * 
- * 
  * */
 package connect4.ai;
 import java.util.Random;
@@ -13,7 +10,7 @@ import java.util.Random;
 //the human is 1 the computer is 10
 public class Player18 implements PlayerClass {
     public int [] [] board = new int [8][8];
-    private Random r = new Random(); // get rid of this later only using it for min/max until eval is ready
+    private Random r = new Random();
     private int leaf = 0;
     private int mmf = 1;
     private int um = 0;
@@ -44,11 +41,7 @@ public class Player18 implements PlayerClass {
             diagOne3s() + diagOne2s() + diagTwo3s() + diagTwo2s();
     }
     
-    
-    
-    
-    
-    
+
     //computer wins
     public boolean isWin () {
         if (rowWin()) {
@@ -984,27 +977,6 @@ public class Player18 implements PlayerClass {
     public static void main (String []args) {
         
         Player18 p = new Player18();
-       /* int i = 0;
-        
-        while (i < 64) {
-            p.chooseMove();
-            p.printBoard();
-            System.out.println();
-            i++;
-        }*/
-
-       /* p.fillCol(0);
-        p.fillCol(1);
-        p.makeMove(3, 1);
-        p.makeMove(3, 1);
-        p.makeMove(3, 1);
-        p.makeMove(3, 1);
-        p.makeMove(3, 1);
-        p.makeMove(3, 1);
-        p.makeMove(3, 1);
-        p.makeMove(3, 1);
-        p.printBoard();
-        System.out.println(p.isWin());*/
         
     }
     
